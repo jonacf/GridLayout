@@ -1,0 +1,119 @@
+$mostaza: #e2981b;
+$verde-agua: #a0d9ce;
+$morado: #48468c;
+$violeta: #7845bf;
+$rosado: #f23dc2;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #dda055,
+    #e08859,
+    #db7263,
+    #ce606f,
+    #ba537c
+  );
+}
+.container {
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(19, 1fr);
+  height: 100vh;
+}
+.titulo {
+  font-family: "noto serif";
+  grid-area: 4 / 11 / 8 /12;
+  font-size: 3rem;
+  letter-spacing: 7px;
+  place-self: stretch;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: aliceblue;
+}
+.morado {
+  background-color: $morado;
+  grid-area: 2 / 8 / 3 / 11;
+}
+.rosado {
+  background-color: $rosado;
+  opacity: 0.8;
+  grid-area: 6 / 15 / 8 / 18;
+}
+.violeta {
+  background-color: $violeta;
+  grid-area: 4 / 3 / 5 / 9;
+}
+.violeta2 {
+  background-color: $violeta;
+  grid-area: 3 / 13 / 6 / 15;
+}
+.verdeagua {
+  background-color: $verde-agua;
+  opacity: 0.9;
+  grid-area: 7 / 6 / 8 / 9;
+}
+.mostaza {
+  background-color: $mostaza;
+  outline: 10px solid $mostaza;
+  opacity: 0.6;
+  grid-area: 8 / 7 / 10 / 9;
+}
+.jazz {
+  grid-area: 2 / 6 / 5 / 8;
+  z-index: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.valientes {
+  grid-area: 4 / 14 / 7 / 16;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.biblia {
+  grid-area: 7 / 9 / 10 / 11;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(13, 1fr);
+    grid-auto-rows: 50px;
+  }
+  .violeta2 {
+    background-color: $violeta;
+    grid-area: 11 / 4 / 14 / 6;
+  }
+  .rosado {
+    background-color: $rosado;
+    opacity: 0.8;
+    grid-area: 15 / 6 / 17 / 9;
+  }
+  .valientes {
+    grid-area: 13 / 5 / 16 / 7;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+}
