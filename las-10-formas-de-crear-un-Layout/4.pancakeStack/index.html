@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pancake Stack</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child">header</div>
+      <div class="child">main</div>
+      <div class="child">footer</div>
+    </div>
+    <style>
+      .container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 500px;
+      }
+      .child:nth-child(1) {
+        background-color: darksalmon;
+      }
+      .child:nth-child(2) {
+        background-color: darkslategray;
+      }
+      .child:nth-child(3) {
+        background-color: firebrick;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+}
+
+.body {
+  display: grid;
+  place-content: center;
+  height: inherit;
+}
+
+.container {
+  display: grid;
+  width: 500px;
+  padding: 20px;
+  box-shadow: 3px 7px 9px 0px #00000033;
+}
+
+.navegacion {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 100px;
+  padding-block: 20px;
+}
+
+.navegacion__img {
+  width: 100px;
+}
+.navegacion__img img {
+  width: inherit;
+}
+
+.navegacion__text {
+  padding-inline-start: 32px;
+}
+
+.main {
+  width: inherit;
+}
+.main img {
+  width: inherit;
+}
+
+.footer__container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.footer__button {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: brown;
+}
+
+.imagenes {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cassic Holy Grail Layout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header a">header</div>
+      <div class="left-side a">left side</div>
+      <div class="main a">main content</div>
+      <div class="right-side a">right side</div>
+      <div class="footer a">footer</div>
+    </div>
+    <style>
+      .container {
+        display: grid;
+        grid-template: auto 1fr auto / auto 1fr auto;
+        height: 400px;
+      }
+      .a {
+        padding: 10px;
+      }
+      .header {
+        grid-column: 1 / 4;
+        background-color: firebrick;
+      }
+      .footer {
+        grid-column: 1 / 4;
+        background-color: forestgreen;
+      }
+      .left-side {
+        background-color: fuchsia;
+      }
+      .right-side {
+        background-color: gold;
+      }
+      .main {
+        background-color: green;
+      }
+      .footer {
+        background-color: hotpink;
+      }
+    </style>
+  </body>
+</html>

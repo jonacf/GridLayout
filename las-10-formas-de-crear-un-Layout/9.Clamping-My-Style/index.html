@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clamping My Style</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child">
+        <h3 class="title">Title here</h3>
+        <div class="box">cajita</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+          repellat?
+        </p>
+      </div>
+    </div>
+    <style>
+      .container {
+        display: grid;
+        place-items: center;
+        height: auto;
+        resize: both;
+        overflow: auto;
+        background-color: cornsilk;
+      }
+      .child {
+        width: clamp(23ch, 50%, 46ch);
+        padding: 1rem;
+        border: 1px solid #2469eb;
+        background-color: #719be9;
+      }
+      .box {
+        width: 100%;
+        height: 100px;
+        background-color: cornsilk;
+      }
+    </style>
+  </body>
+</html>
